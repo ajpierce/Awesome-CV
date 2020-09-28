@@ -17,7 +17,12 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, letterpaper]{awesome-cv}
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Allow Japanese fonts
+\usepackage{xeCJK}
+\setCJKmainfont{mplus-1m-thin} % for \rmfamily
+\setCJKsansfont{mplus-1m-thin} % for \sffamily
 
 % Allow embedding of images
 \usepackage{graphicx}
