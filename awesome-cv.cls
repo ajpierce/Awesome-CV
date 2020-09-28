@@ -403,7 +403,7 @@
 
 % Others
 \newcommand{\acvSectionTopSkip}{1mm}
-\newcommand{\acvSectionContentTopSkip}{5mm}
+\newcommand{\acvSectionContentTopSkip}{4mm}
 
 
 %-------------------------------------------------------------------------------
