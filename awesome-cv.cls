@@ -152,8 +152,15 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % Awesome section color
-\def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+
+% Color highlighting for the first three letters
+% \def\@sectioncolor#1#2#3{%
+  % \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+% }
+
+% Color highlighting for the whole damn word
+\def\@sectioncolor#1{%
+  \ifbool{acvSectionColorHighlight}{\color{awesome}{#1}}{}%
 }
 
 
@@ -395,8 +402,8 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{3mm}
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionTopSkip}{1mm}
+\newcommand{\acvSectionContentTopSkip}{5mm}
 
 
 %-------------------------------------------------------------------------------
